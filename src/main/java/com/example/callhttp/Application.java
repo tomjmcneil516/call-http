@@ -23,7 +23,7 @@ public class Application {
 
         if (cmd.equals("--get")) {
             if (args.length == 1) {
-                System.out.println("No source given");
+                System.out.println("Error: No source given");
                 return;
             }
             String source = args[1];
@@ -32,7 +32,6 @@ public class Application {
             return;
         }
 
-        System.out.println("Invalid Command");
+        System.out.println("Error: Invalid Command");
     }
-
 }

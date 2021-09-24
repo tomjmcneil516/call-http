@@ -6,14 +6,15 @@ import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Properties;
 
 
 public class HttpGet {
 
-    public static final int EXPONENTIAL_BACKOFF_BASE_MS = 200;
-    public static final int EXPONENTIAL_BACKOFF_MULTIPLIER = 2;
-    public static final int TIMEOUT_MS = 500;
-    public static final int RETRIES = 2;
+    private static final int EXPONENTIAL_BACKOFF_BASE_MS = 200;
+    private static final int EXPONENTIAL_BACKOFF_MULTIPLIER = 2;
+    private static final int TIMEOUT_MS = 500;
+    private static final int RETRIES = 2;
 
     public static String runCommand(String urlToRead) {
 
