@@ -10,7 +10,7 @@ public class CommandController {
             value = "/call-http",
             params = { "method=get", "target" }
     )
-    public String getURL(@RequestParam String target) throws IOException, InterruptedException {
+    public String getURL(@RequestParam String target) {
         return HttpGet.runCommand(target);
     }
 }
